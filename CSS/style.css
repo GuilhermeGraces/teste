@@ -5,19 +5,27 @@
     padding: 0;
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
-    padding: 0;
+html, body {
+    height: 100%;
     margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
 }
+
+main {
+    flex: 1;
+}
+
 /*PARTE CIMA HEADER ############################*/
 .partecima{
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: solid rgba(175, 175, 175, 0.507) 0.5px;
-    padding: 10px 40px 0px 40px;
+    /*padding: 10px 40px 0px 40px;*/
+    margin: 10px 40px 0px 40px;
 }
 
 .partecima img{
@@ -38,7 +46,7 @@ body{
     justify-content: space-between;
     padding: 10px 40px 0px 40px;
     align-items: center;
-    border-bottom: solid 3px rgb(149,105,85);
+    border-bottom: solid 3px rgb(153, 115, 98);
 }
 .partebaixo img{
     height: 30px;
@@ -82,7 +90,7 @@ align-items: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(132,68,60);
+    background-color: rgb(90, 23, 14);
     border-radius: 10px;
     padding: 4px;
     color: rgb(234,220,190);
@@ -135,10 +143,9 @@ main{
 
 .meiobaixo{
     display: flex;
-    
+    margin-top: 80px;
     justify-content: space-between;
     padding: 2% 5%;
-    border: solid red;
 }
 
 .logo2{
@@ -148,7 +155,6 @@ main{
     font-family: Great Vibes;
     font-size: 45px;
     color: rgb(48,7,4);
-    border: solid yellow;
 }
 .logo2 img{
     height: 45px;
@@ -158,7 +164,6 @@ main{
     height: 170px;
     display: flex;
     flex-flow: column;
-    border: solid black;
 }
 
 .menu h3{
@@ -182,7 +187,6 @@ main{
     display: flex;
     flex-flow: column;
     height: 70px;
-    border: solid blue;
 }
 
 .endereco h3{
@@ -205,6 +209,7 @@ footer{
     justify-content: center;
     background-color: rgb(72,10,4);
     color: white;
+    height: 80px;
     font-family: IBM Plex Sans;
 }
 
