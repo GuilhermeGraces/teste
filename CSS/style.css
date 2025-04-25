@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Great+Vibes&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+/*PARTE CIMA HEADER ############################*/
+.partecima{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid rgba(175, 175, 175, 0.507) 0.5px;
+    padding: 10px 40px 0px 40px;
+}
+
+.partecima img{
+    height: 17px;  
+}
+
+.partecima p{
+    font-family: Comfortaa;
+    font-size: 15px;
+    color: rgb(148,56,56);
+}
+
+/*PARTE DE BAIXO HEADER######################################*/
+
+
+.partebaixo{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px 0px 40px;
+    align-items: center;
+    border-bottom: solid 3px rgb(149,105,85);
+}
+.partebaixo img{
+    height: 30px;
+}
+
+/*ESQUERDA*/
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Great Vibes;
+    font-size: 33px;
+    color: rgb(48,7,4);
+}
+
+.logo img{
+    height: 40px;
+}
+/*DIREITA*/
+
+.direita{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.linktop a{
+    text-decoration: none;
+    color:black ;
+    padding-right: 40px;
+    font-family: Comfortaa;
+    font-size: 15px;
+}
+
+.linktop a:hover{
+    color: brown;
+}
+
+.cart{
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(132,68,60);
+    border-radius: 10px;
+    padding: 4px;
+    color: rgb(234,220,190);
+    
+}
+
+.cart img{
+    padding-right: 5px;
+    height: 17px;
+}
+
+/*CORPO DO SITE###########################################*/
+
+main{
+    padding-top:40px ;
+}
+.containertenis{
+    height: 500px;
+    width: 100%;
+    background-image: linear-gradient(90deg, transparent 0%, rgb(114, 100, 100) 95%), url("../img/background.avif");
+    display: flex;
+    flex-flow: column;
+    color: white;
+    align-items: end;
+    justify-content: center;
+
+}
+
+.containertenis p{
+    max-width: 700px;
+    font-size: 30px;
+    font-family:Comfortaa ;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black;
+}
+
+.texto{
+    text-align: center;
+    margin-right: 160px;
+}
+
+.texto h2{
+    font-family: Great Vibes;
+    font-size: 70px;
+    padding-bottom: 30px;
+    color: rgb(255, 244, 220);
+}
+
+/*ABAIXO DO CONTAINER########*/
+
+.meiobaixo{
+    display: flex;
+    
+    justify-content: space-between;
+    padding: 2% 5%;
+    border: solid red;
+}
+
+.logo2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Great Vibes;
+    font-size: 45px;
+    color: rgb(48,7,4);
+    border: solid yellow;
+}
+.logo2 img{
+    height: 45px;
+}
+
+.menu{
+    height: 170px;
+    display: flex;
+    flex-flow: column;
+    border: solid black;
+}
+
+.menu h3{
+    color: rgb(73, 18, 14);
+    font-size: 22px;
+    padding-bottom: 15px ;
+}   
+
+.menu a{
+    text-decoration: none;
+    font-family: Comfortaa;
+    color: rgb(149,105,85);
+    padding: 5px;
+}
+
+.menu a:hover{
+    color:rgb(102, 52, 46) ;
+}
+
+.endereco{
+    display: flex;
+    flex-flow: column;
+    height: 70px;
+    border: solid blue;
+}
+
+.endereco h3{
+    font-size: 22px;
+    color: rgb(73, 18, 14);
+    padding-bottom: 20px ;
+}
+
+.endereco p{
+    font-size: 13px;
+    font-family: Comfortaa;
+}
+
+/*FOOTER########################*/
+
+footer{
+    border: solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(72,10,4);
+    color: white;
+    font-family: IBM Plex Sans;
+}
+
