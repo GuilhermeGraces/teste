@@ -110,5 +110,20 @@ main {
         color: white;
         padding: 30px;
         font-family: IBM Plex Sans;
-        background-color: rgb(109, 82, 70);
+        background-color: rgb(108,13,12);
+    }
+
+
+    /*CAIXOTES#######################*/
+
+    .caixa1{
+        background-color: aqua;
+        height: 100px;
+        width: 200px;
+    }
+
+    .caixa2{
+        background-color: black;
+        height: 30px;
+        width: 80px;
     }

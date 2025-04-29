@@ -142,13 +142,14 @@ main{
 /*ABAIXO DO CONTAINER########*/
 
 .meiobaixo{
+    
     display: flex;
-    margin-top: 80px;
     justify-content: space-between;
     padding: 2% 5%;
 }
 
 .logo2{
+    padding-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,6 +162,7 @@ main{
 }
 
 .menu{
+    padding-top: 30px;
     height: 170px;
     display: flex;
     flex-flow: column;
@@ -184,6 +186,7 @@ main{
 }
 
 .endereco{
+    padding-top: 30px;
     display: flex;
     flex-flow: column;
     height: 70px;
@@ -203,13 +206,12 @@ main{
 /*FOOTER########################*/
 
 footer{
-    border: solid black;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(72,10,4);
     color: white;
-    height: 80px;
+    height: 60px;
     font-family: IBM Plex Sans;
 }
 
