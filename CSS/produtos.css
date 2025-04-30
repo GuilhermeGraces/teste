@@ -117,13 +117,91 @@ main {
     /*CAIXOTES#######################*/
 
     .caixa1{
-        background-color: aqua;
-        height: 100px;
-        width: 200px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: inset -3px -4px 2px #5c5c5c;
+    }
+    .caixa1 img{
+        width: 290px;
+        height: 300px;
     }
 
     .caixa2{
         background-color: black;
-        height: 30px;
-        width: 80px;
+        height: 50%;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .containerProdutos1{
+        display: flex;
+        justify-content: space-between;
+        border: solid pink 3px;
+        padding: 50px 50px 0px 50px;
+        
+    }
+    
+    .containerProdutos2{
+        display: flex;
+        justify-content: space-between;
+        border: solid pink 3px;
+        padding: 50px 50px 0px 50px;
+        
+    }
+
+    .containerProdutos3{
+        display: flex;
+        justify-content: space-between;
+        border: solid pink 3px;
+        padding: 50px 50px 0px 50px;
+        
+    }
+
+    .containerProdutos4{
+        display: flex;
+        justify-content: space-between;
+        border: solid pink 3px;
+        padding: 50px 50px 0px 50px;
+        
+    }
+
+
+    #tenis1 img{
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .dados-produto{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-reduzir{
+        width: 30px;
+        background-color: red;
+        color: white;
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    .btn-reduzir:hover{
+        background-color: rgb(255, 107, 107);
+    }
+
+    .btn-adicionar{
+        width: 30px;
+        background-color: rgb(16, 173, 16);
+        color: white;
+        border-radius: 5px;
+        margin: 10px;
     }
