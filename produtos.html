@@ -41,8 +41,12 @@
                 
 
                 <div class="cart">
-                    <img src="./img/carte.png" alt="">
-                    <p>0</p>
+                    <a href="" class="btn-cart">
+                        <span id="add_carrinho" data-count="0">
+                         <img src="./img/carte.png" alt="">
+                        </span>
+                    </a>
+                    
                 </div>
             </div>
         </div>
@@ -60,12 +64,15 @@
                 <div class="caixa1">
                     
                    
-                        <img src="./img/pexels-aditya-aiyar-615049-1407354.jpg" alt="">
-                        <p>bota grande</p>
+                     <img src="./img/pexels-aditya-aiyar-615049-1407354.jpg" alt="">
+                    
+                    <p>bota grande</p>
+
+                        
                     
                     <div class="dados-produto" id="pdt1">
                         <div class="und-produto">
-                            <button class="btn-reduzir">-</button>
+                            <button class="btn-reduzir" onclick="alterar(1,'reduzir')">-</button>
                             <span id="qtd-pdt1">0</span>
                             <button class="btn-adicionar" onclick="alterar(1,'aumentar')">+</button>
                         </div>

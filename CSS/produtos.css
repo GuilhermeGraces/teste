@@ -83,8 +83,49 @@ main {
     .linktop a:hover{
         color: brown;
     }
-    
+
     .cart{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 50px;
+        background-color: rgb(90, 23, 14);
+        border-radius: 15px;
+        padding: 10px;
+        transition: 0.5s;
+        margin-right: 1%;
+    }
+
+    .cart img{
+        max-width: 70%;
+        text-align: center;
+    }
+
+    .cart:hover{
+        background-color: #5c5c5c;
+    }
+
+    #add_carrinho::before{
+        content: attr(data-count);
+        background-color: greenyellow;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        font-weight: 700;
+        position: absolute;
+        right: 3%;
+
+    }
+
+    #add_carrinho[data-count='0']::before{
+        display: none;
+    }
+    
+   /* .cart{
         height: 25px;
         display: flex;
         align-items: center;
@@ -94,12 +135,12 @@ main {
         padding: 4px;
         color: rgb(234,220,190);
         
-    }
+    }*/
     
-    .cart img{
+   /* .cart img{
         padding-right: 5px;
         height: 17px;
-    }
+    }*/
 
     /*MAIN #################################*/
 
@@ -125,13 +166,16 @@ main {
         width: 300px;
         border-radius: 10px;
         box-shadow: inset -3px -4px 2px #5c5c5c;
+        border: solid gray 1px;
     }
     .caixa1 img{
-        width: 290px;
-        height: 300px;
+        width: 255px;
+        height: 302px;
+        border-radius: 5px;
     }
 
     .caixa2{
+        
         background-color: black;
         height: 50%;
         width: 100%;
