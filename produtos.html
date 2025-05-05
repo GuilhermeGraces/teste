@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,11 @@
     <link rel="stylesheet" href="./CSS/produtos.css">
     <script defer src="./JS/script.js"></script>
 </head>
+
 <body>
     <header>
         <div class="partecima">
-            <p> contato@frontlimp.com.br  <strong>(67) 3333-5555</strong></p>
+            <p> contato@frontlimp.com.br <strong>(67) 3333-5555</strong></p>
 
             <div class="imgpc">
                 <img src="./img/pngimg.com - whatsapp_PNG21.png" alt="">
@@ -22,8 +24,8 @@
 
 
         <div class="partebaixo">
-           
-            <div class="esquerda"> 
+
+            <div class="esquerda">
                 <div class="logo">
                     <p>Shoes Shoot</p>
                     <img src="./img/logoTiro.png">
@@ -36,17 +38,18 @@
                     <a href="./index.html">Início</a>
                     <a href="#">Empresa</a>
                     <a href="./produtos.html">Produtos</a>
-                    <a href="#">Contato</a>
+                    <a href="./login.html">Login</a>
                 </div>
-                
+
 
                 <div class="cart">
                     <a href="" class="btn-cart">
-                        <span id="add_carrinho" data-count="0">
-                         <img src="./img/carte.png" alt="">
-                        </span>
-                    </a>
+                     
+                            <img src="./img/carte.png" alt="">
+                            <span class="span-crt" id="qtd-crt">0</span>
                     
+                    </a>
+
                 </div>
             </div>
         </div>
@@ -57,128 +60,312 @@
             <h1>Produtos</h1>
         </div>
 
-        
+
 
         <div class="containerProdutos1">
-            
-                <div class="caixa1">
-                    
-                   
-                     <img src="./img/pexels-aditya-aiyar-615049-1407354.jpg" alt="">
-                    
-                    <p>bota grande</p>
+            <!--PRIMEIRO CAIXOTE-->
+            <div class="caixa1">
 
-                        
-                    
-                    <div class="dados-produto" id="pdt1">
-                        <div class="und-produto">
-                            <button class="btn-reduzir" onclick="alterar(1,'reduzir')">-</button>
-                            <span id="qtd-pdt1">0</span>
-                            <button class="btn-adicionar" onclick="alterar(1,'aumentar')">+</button>
-                        </div>
-                        <p>Valor: R$ <span id="valor-1">36,00</span></p>
-                        <p>Total: R$ <span id="subtotal-pdt1">0</span></p>
-                    </div>
-                </div>
-            
+                <div class="caixa2">
+                    <img src="./img/pexels-aditya-aiyar-615049-1407354.jpg" alt="">
 
-            <a href="#">
-                <div class="caixa1">
-                    <div class="caixa2">
-                        
-                    </div>
-                </div>
-            </a>
 
-            <a href="#">
-                <div class="caixa1">
-                    <div class="caixa2">
-                        
-                    </div>
                 </div>
-            </a>
+
+
+
+                <div class="dados-produto" id="pdt1">
+                    <p>Tênis adidas</p>
+                    <div class="und-produto">
+                        <button class="btn-reduzir" onclick="alterar(1,'reduzir')">-</button>
+                        <span id="qtd-pdt1">0</span>
+                        <button class="btn-adicionar" onclick="alterar(1, 'aumentar')">+</button>
+                    </div>
+                    <p>Valor: R$ <span id="valor-1">46,00</span></p>
+                    <p>Total: R$ <span id="subtotal-1">0</span></p>
+                </div>
+            </div>
+
+                <!--SEGUNDO CAIXOTE-->
+
+            <div class="caixa1">
+
+                <div class="caixa2">
+                    <img src="./img/pexels-desertedinurban-4462781.jpg" alt="">
+
+
+                </div>
+
+
+
+                <div class="dados-produto" id="pdt2">
+                    <p>Tênis nike</p>
+                    <div class="und-produto">
+                        <button class="btn-reduzir" onclick="alterar(2,'reduzir')">-</button>
+                        <span id="qtd-pdt2">0</span>
+                        <button class="btn-adicionar" onclick="alterar(2, 'aumentar')">+</button>
+                    </div>
+                    <p>Valor: R$ <span id="valor-2">36,00</span></p>
+                    <p>Total: R$ <span id="subtotal-2">0</span></p>
+                </div>
+            </div>
+
+            <!--TERCEIRO CAIXOTE-->
+
+            <div class="caixa1">
+
+                <div class="caixa2">
+                    <img src="./img/pexels-noblursbyshivam-20415613 (1).jpg" alt="">
+
+
+                </div>
+
+
+
+                <div class="dados-produto" id="pdt3">
+                    <p>Chuteira laranja</p>
+                    <div class="und-produto">
+                        <button class="btn-reduzir" onclick="alterar(3,'reduzir')">-</button>
+                        <span id="qtd-pdt3">0</span>
+                        <button class="btn-adicionar" onclick="alterar(3, 'aumentar')">+</button>
+                    </div>
+                    <p>Valor: R$ <span id="valor-3">36,00</span></p>
+                    <p>Total: R$ <span id="subtotal-3">0</span></p>
+                </div>
+            </div>
         </div>
 
 
         <div class="containerProdutos2">
-            <a href="#">
-                <div class="caixa1">
-                    <div class="caixa2">
-                        
-                    </div>
-                </div>
-            </a>
+            
+            
+            <div class="caixa1">
 
-            <a href="#">
-                <div class="caixa1">
-                    <div class="caixa2">
-                        
-                    </div>
-                </div>
-            </a>
+                <div class="caixa2">
+                    <img src="./img/pexels-pranay-patel-162267549-23491456.jpg" alt="">
 
-            <a href="#">
-                <div class="caixa1">
-                    <div class="caixa2">
-                        
-                    </div>
+
                 </div>
-            </a>
+
+
+
+                <div class="dados-produto" id="pdt4">
+                    <p>Tênis branco</p>
+                    <div class="und-produto">
+                        <button class="btn-reduzir" onclick="alterar(4,'reduzir')">-</button>
+                        <span id="qtd-pdt2">0</span>
+                        <button class="btn-adicionar" onclick="alterar(4, 'aumentar')">+</button>
+                    </div>
+                    <p>Valor: R$ <span id="valor-4">36,00</span></p>
+                    <p>Total: R$ <span id="subtotal-4">0</span></p>
+                </div>
+            </div>
+
+            
+            
+            <div class="caixa1">
+
+                <div class="caixa2">
+                    <img src="./img/pexels-jose-martin-segura-benites-1422456152-27503504.jpg" alt="">
+
+
+                </div>
+
+
+
+                <div class="dados-produto" id="pdt5">
+                    <p>Sapato azul</p>
+                    <div class="und-produto">
+                        <button class="btn-reduzir" onclick="alterar(5,'reduzir')">-</button>
+                        <span id="qtd-pdt2">0</span>
+                        <button class="btn-adicionar" onclick="alterar(5, 'aumentar')">+</button>
+                    </div>
+                    <p>Valor: R$ <span id="valor-5">36,00</span></p>
+                    <p>Total: R$ <span id="subtotal-5">0</span></p>
+                </div>
+            </div>
+
+            
+            
+            <div class="caixa1">
+
+                <div class="caixa2">
+                    <img src="./img/pexels-skylar-kang-6046184.jpg" alt="">
+
+
+                </div>
+
+
+
+                <div class="dados-produto" id="pdt6">
+                    <p>Salto alto</p>
+                    <div class="und-produto">
+                        <button class="btn-reduzir" onclick="alterar(6,'reduzir')">-</button>
+                        <span id="qtd-pdt2">0</span>
+                        <button class="btn-adicionar" onclick="alterar(6, 'aumentar')">+</button>
+                    </div>
+                    <p>Valor: R$ <span id="valor-6">36,00</span></p>
+                    <p>Total: R$ <span id="subtotal-6">0</span></p>
+                </div>
+            </div>
         </div>
 
 
         <div class="containerProdutos3">
-            <a href="#">
-                <div class="caixa1">
-                    <div class="caixa2">
-                        
-                    </div>
-                </div>
-            </a>
+            <div class="caixa1">
 
-            <a href="#">
-                <div class="caixa1">
-                    <div class="caixa2">
-                        
-                    </div>
-                </div>
-            </a>
+                <div class="caixa2">
+                    <img src="./img/pexels-345258976-27288922.jpg" alt="">
 
-            <a href="#">
-                <div class="caixa1">
-                    <div class="caixa2">
-                        
-                    </div>
+
                 </div>
-            </a>
+
+
+
+                <div class="dados-produto" id="pdt7">
+                    <p>Sapatilha</p>
+                    <div class="und-produto">
+                        <button class="btn-reduzir" onclick="alterar(7,'reduzir')">-</button>
+                        <span id="qtd-pdt2">0</span>
+                        <button class="btn-adicionar" onclick="alterar(7, 'aumentar')">+</button>
+                    </div>
+                    <p>Valor: R$ <span id="valor-7">36,00</span></p>
+                    <p>Total: R$ <span id="subtotal-7">0</span></p>
+                </div>
+            </div>
+
+            
+            
+            <div class="caixa1">
+
+                <div class="caixa2">
+                    <img src="./img/pexels-craytive-1456706.jpg" alt="">
+
+
+                </div>
+
+
+
+                <div class="dados-produto" id="pdt8">
+                    <p>Tênis nike azul/amarelo</p>
+                    <div class="und-produto">
+                        <button class="btn-reduzir" onclick="alterar(8,'reduzir')">-</button>
+                        <span id="qtd-pdt2">0</span>
+                        <button class="btn-adicionar" onclick="alterar(8, 'aumentar')">+</button>
+                    </div>
+                    <p>Valor: R$ <span id="valor-8">36,00</span></p>
+                    <p>Total: R$ <span id="subtotal-8">0</span></p>
+                </div>
+            </div>
+
+            
+            
+            <div class="caixa1">
+
+                <div class="caixa2">
+                    <img src="./img/pexels-desertedinurban-4462782.jpg" alt="">
+
+
+                </div>
+
+
+
+                <div class="dados-produto" id="pdt9">
+                    <p>Tênis preto</p>
+                    <div class="und-produto">
+                        <button class="btn-reduzir" onclick="alterar(9,'reduzir')">-</button>
+                        <span id="qtd-pdt2">0</span>
+                        <button class="btn-adicionar" onclick="alterar(9, 'aumentar')">+</button>
+                    </div>
+                    <p>Valor: R$ <span id="valor-9">36,00</span></p>
+                    <p>Total: R$ <span id="subtotal-9">0</span></p>
+                </div>
+            </div>
         </div>
 
 
         <div class="containerProdutos4">
-            <a href="#">
-                <div class="caixa1">
-                    <div class="caixa2">
-                        
-                    </div>
-                </div>
-            </a>
+            
+            
+            <div class="caixa1">
 
-            <a href="#">
-                <div class="caixa1">
-                    <div class="caixa2">
-                        
-                    </div>
-                </div>
-            </a>
+                <div class="caixa2">
+                    <img src="./img/pexels-doddyk-saputra-2148253367-30128844.jpg" alt="">
 
-            <a href="#">
-                <div class="caixa1">
-                    <div class="caixa2">
-                        
-                    </div>
+
                 </div>
-            </a>
+
+
+
+                <div class="dados-produto" id="pdt10">
+                    <p>Tênis All Star</p>
+                    <div class="und-produto">
+                        <button class="btn-reduzir" onclick="alterar(10,'reduzir')">-</button>
+                        <span id="qtd-pdt2">0</span>
+                        <button class="btn-adicionar" onclick="alterar(10, 'aumentar')">+</button>
+                    </div>
+                    <p>Valor: R$ <span id="valor-10">36,00</span></p>
+                    <p>Total: R$ <span id="subtotal-10">0</span></p>
+                </div>
+            </div>
+
+            
+            
+            <div class="caixa1">
+
+                <div class="caixa2">
+                    <img src="./img/pexels-gabby-k-7691385.jpg" alt="">
+
+
+                </div>
+
+
+
+                <div class="dados-produto" id="pdt11">
+                    <p>Sandalha amarela</p>
+                    <div class="und-produto">
+                        <button class="btn-reduzir" onclick="alterar(11,'reduzir')">-</button>
+                        <span id="qtd-pdt2">0</span>
+                        <button class="btn-adicionar" onclick="alterar(11, 'aumentar')">+</button>
+                    </div>
+                    <p>Valor: R$ <span id="valor-11">36,00</span></p>
+                    <p>Total: R$ <span id="subtotal-11">0</span></p>
+                </div>
+            </div>
+
+            
+            
+            <div class="caixa1">
+
+                <div class="caixa2">
+                    <img src="./img/pexels-melvin-buezo-1253763-2529148.jpg" alt="">
+
+
+                </div>
+
+
+
+                <div class="dados-produto" id="pdt12">
+                    <p>Tênis cinza/branco</p>
+                    <div class="und-produto">
+                        <button class="btn-reduzir" onclick="alterar(12,'reduzir')">-</button>
+                        <span id="qtd-pdt2">0</span>
+                        <button class="btn-adicionar" onclick="alterar(12, 'aumentar')">+</button>
+                    </div>
+                    <p>Valor: R$ <span id="valor-12">36,00</span></p>
+                    <p>Total: R$ <span id="subtotal-12">0</span></p>
+                </div>
+            </div>
         </div>
     </main>
+
+    <footer>
+        <div class="footer">
+            <p>© ShoesShoot. Todos os direitos reservados.</p>
+        </div>
+
+    
+    </footer>
 </body>
+
 </html>

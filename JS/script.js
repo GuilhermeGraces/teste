@@ -1,8 +1,9 @@
-function alterar(produto,acao){
-    const quantidade= document.getElementById('qtd-ptd'+produto);
-    const valor = document.getElementById("valor-"+produto);
-    const subtotal = document.getElementById("subtotal-pdt"+produto);
-    const count = document.getElementById('add_carrinho')
+function alterar(i,acao){
+    const quantidade = document.getElementById('qtd-pdt'+i);
+    const valor = document.getElementById('valor-'+i);
+    const subtotal = document.getElementById('subtotal-'+i);
+    const count = document.getElementById('add_carrinho');
+    
 
 const qtd = parseFloat(quantidade.innerHTML.replace('.','').replace(',','.'));
 const valorFloat = parseFloat(valor.innerHTML.replace('.','').replace(',','.'));
@@ -26,5 +27,6 @@ function alterarCarrinho(numero,valor_count){
     let novo_count=count_atual+numero
 
     if(novo_count<0)novo_count=0
-    valor_count.setAtrribute('data-count',novo_count)
+    valor_count.getAttribute('data-count')
 }
+
