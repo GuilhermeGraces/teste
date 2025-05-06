@@ -15,7 +15,6 @@
     }
 
     main {
-        background: rgb(255, 222, 206);
         flex: 1;
         padding-bottom: 30px;
         
@@ -91,7 +90,7 @@
         color: brown;
     }
     
-    .cart{
+    .carrinho{
         height: 25px;
         display: flex;
         align-items: center;
@@ -100,18 +99,36 @@
         border-radius: 10px;
         padding: 4px;
         color: rgb(234,220,190);
+        transition: 0.5s;
     }
-
-
-    .btn-cart{
-        text-decoration: none;
-        color: white;
-        font-family: Comfortaa;
+     
+    .carrinho img{
+        width: 20px;
+        text-align: center;
+        height: 20px;
     }
-    
-   .cart img{
-        padding-right: 5px;
-        height: 17px;
+     
+    .carrinho:hover{
+        background-color: rgb(138, 82, 57);
+    }
+     
+    #add_carrinho::before{
+        content: attr(data-count);
+        background-color: rgb(90, 23, 14);
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        position: absolute;
+        right: 1.5%;
+    }
+     
+    #add_carrinho[data-count='0']::before{
+        display: none;
     }
 
     /*MAIN #################################*/
@@ -169,7 +186,6 @@
 
 
     .containerProdutos1{
-        background-color: rgb(255, 222, 206);
         margin-left: 90px;
         margin-right: 90px;
         display: flex;
@@ -179,7 +195,6 @@
     }
     
     .containerProdutos2{
-        background-color: rgb(255, 222, 206);
         margin-left: 90px;
         margin-right: 90px;
         display: flex;
@@ -190,7 +205,6 @@
     }
 
     .containerProdutos3{
-        background-color: rgb(255, 222, 206);
         margin-left: 90px;
         margin-right: 90px;
         display: flex;
@@ -201,7 +215,6 @@
     }
 
     .containerProdutos4{
-        background-color: rgb(255, 222, 206);
         margin-left: 90px;
         margin-right: 90px;
         display: flex;

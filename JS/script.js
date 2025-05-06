@@ -27,6 +27,6 @@ function alterarCarrinho(numero,valor_count){
     let novo_count=count_atual+numero
 
     if(novo_count<0)novo_count=0
-    valor_count.getAttribute('data-count')
+    valor_count.setAttribute('data-count',novo_count)
 }
 

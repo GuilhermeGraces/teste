@@ -114,18 +114,19 @@
     }
 
 
-
+    /*SEPARA#####################################################################################*/
 
     .objetivo{
         display: flex;
         height: 500px;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 40px 100px 150px;
     }
 
     .esquerda-obj{
         height: 500px;
-        padding-right: 10px;
+        padding-right: 50px;
     }
     .esquerda-obj img{
         height: 100%;
@@ -135,12 +136,13 @@
 
     .direita-obj{
         height: 500px;
+        max-width: 700px;
         display: flex;
         flex-flow: column;
         justify-content: center;
         font-size: 20px;
         font-family: comfortaa;
-        padding-left: 10px;
+        padding-left: 50px;
     }
 
     .direita-obj h2{
@@ -153,54 +155,67 @@
     }
 
     .historia{
+        background-image: linear-gradient(90deg, transparent 0%, rgb(66, 42, 42) 75%), url("../img/pexels-njeromin-19711451.jpg");
+        height: 400px;
         display: flex;
+        align-items: end;
         flex-flow: column;
-        justify-content: center;
-        align-items: center;
         padding-top: 30px;
         font-family: Comfortaa;
+        justify-content: center;
+    }
+
+    .txth{
+        text-align: center;
+        padding-right: 100px;
     }
 
 
     .historia h3{
         font-size: 30px;
-        color: rgb(128, 45, 6);
+        color: rgb(236, 216, 206);
     }
     .historia p{
+        color: white;
         text-align: center;
         font-size: 20px;
+        max-width: 900px;
+        text-align: center;
     }
 
 
 
     .funcionamos{
         display: flex;
-        padding-top: 40px;
+        height: 500px;
         align-items: center;
+        justify-content: center;
     }
 
-    .esq-func{
+    .dir-func{
         height: 300px;
         padding-right: 10px;
     }
 
-    .esq-func img{
+    .dir-func img{
         height: 100%;
         width: 400px;
         border-radius: 50%;
     }
 
-    .dir-func{
+    .esq-func{
         height: 500px;
+        max-width: 600px;
         display: flex;
         flex-flow: column;
         justify-content: center;
-        font-size: 17px;
+        font-size: 20px;
         font-family: comfortaa;
-        padding-left: 10px;
+        padding-right: 50px;
     }
 
-    .dir-func h4{
+
+    .esq-func h4{
         font-size: 30px;
         color: rgb(128, 45, 6);
     }
